@@ -1,0 +1,23 @@
+$color-primary: #000;
+$color-secondary: #B3B3B3;
+$color-white: #fff;
+
+.cta-btn {
+    margin: 0;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    background-color: $color-primary;
+    color: $color-white;
+    border: none;
+    font-size: 11px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .5s;
+
+    &:hover {
+        background-color: $color-secondary;
+        color: $color-primary;
+    }
+}

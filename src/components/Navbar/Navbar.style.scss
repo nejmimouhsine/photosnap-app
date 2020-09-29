@@ -1,0 +1,43 @@
+$color-primary: #000;
+$color-secondary: #B3B3B3;
+
+.header {
+    padding: 19px 75px;
+
+    .Navbar-icon {
+        display: none;
+    }
+
+    .NavbarItems {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .Navbar-logo {
+            cursor: pointer;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+
+            li:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+
+        .nav-links {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 10px;
+            letter-spacing: 2px;
+            color: $color-primary;
+            font-weight: 700;
+            transition: all .5s;
+
+            &:hover {
+                color: $color-secondary;
+            }
+        }
+    }
+}
