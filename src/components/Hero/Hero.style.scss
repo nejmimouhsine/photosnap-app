@@ -1,0 +1,58 @@
+$color-primary: #000;
+$color-secondary: #B3B3B3;
+$color-white: #fff;
+
+.hero-create {
+    display: grid;
+    grid-template-columns: 1.4fr 2fr;
+    position: relative;
+
+    .hero-content {
+        height: 74vh;
+        background-color: $color-primary;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 70px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            display: block;
+            height: 50%;
+            width: 7px;
+            background: rgb(254,196,147);
+            background: linear-gradient(0deg, rgba(254,196,147,1) 0%, rgba(187,114,154,1) 50%, rgba(90,119,255,1) 100%);
+        }
+
+        &-title {
+            color: $color-white;
+            font-size: 35px;
+            font-weight: 600;
+            letter-spacing: 4px;
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
+
+        &-para {
+            color: $color-secondary;
+            font-size: 13.5px;
+            font-weight: 500;
+            line-height: 1.9;
+            margin-bottom: 50px;
+        }
+    }
+
+    .hero-image {
+        
+        &-img {
+            width: 100%;
+            height: 74vh;
+            background-color: $color-primary;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}

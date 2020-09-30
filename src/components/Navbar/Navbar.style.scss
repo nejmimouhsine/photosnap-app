@@ -2,7 +2,7 @@ $color-primary: #000;
 $color-secondary: #B3B3B3;
 
 .header {
-    padding: 19px 75px;
+    padding: 15px 75px;
 
     .Navbar-icon {
         display: none;
@@ -22,7 +22,7 @@ $color-secondary: #B3B3B3;
             list-style: none;
 
             li:not(:last-child) {
-                margin-right: 30px;
+                margin-right: 45px;
             }
         }
 

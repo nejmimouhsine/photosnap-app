@@ -21,3 +21,34 @@ $color-white: #fff;
         color: $color-primary;
     }
 }
+
+.move-btn {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    border: none;
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    outline: none;
+
+    .btn-arrow {
+        margin-left: 20px;
+        transition: all 1s;
+        cursor: pointer;
+    }
+
+    &:hover {
+        text-decoration: underline;
+        
+        & .btn-arrow {
+            margin-left: 5px;
+        }
+    }
+    & svg g {
+        stroke: $color-white;
+    }
+}
