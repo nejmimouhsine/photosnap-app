@@ -20,10 +20,10 @@ $color-secondary: #B3B3B3;
         .nav-menu {
             display: flex;
             list-style: none;
+        }
 
-            li:not(:last-child) {
-                margin-right: 45px;
-            }
+        li:not(:last-child) {
+            margin-right: 40px;
         }
 
         .nav-links {

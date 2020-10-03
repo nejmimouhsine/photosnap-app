@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import Button from '../Button/Button.component';
-// import HeroItems from './HeroItems';
+import Button from '../../Button/Button.component';
 
-import './Hero.style.scss';
+import './Homepage.style.scss';
 
-import backgroundImg1 from "../../assets/home/desktop/create-and-share.jpg";
+import backgroundImg1 from "../../../assets/home/desktop/create-and-share.jpg";
 
-class Hero extends Component {
+class Homepage extends Component {
     render() {
         return (
             <section key={Math.random()} className="hero-create">
@@ -29,4 +28,4 @@ class Hero extends Component {
     }
 }
 
-export default Hero;
+export default Homepage;

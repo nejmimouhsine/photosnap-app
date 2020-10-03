@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { MenuItems } from './MenuItems';
 import Button from '../Button/Button.component';
 
+import { Link } from 'react-router-dom';
+
 import Logo from '../../assets/shared/desktop/logo.svg';
 import Menu from '../../assets/shared/mobile/menu.svg';
 import Close from '../../assets/shared/mobile/close.svg';
@@ -23,14 +25,14 @@ class Navbar extends Component {
                 </div>
 
                 <nav className="NavbarItems">
-                    <div className="Navbar-logo">
+                    <Link className="Navbar-logo" to="/">
                         <img src={Logo} alt="Photosnap" />
-                    </div>
-                    <ul className={this.state.clicked ? 'nav-menu acitve' : 'nav-menu'}>
+                    </Link>
+                    <ul className={this.state.clicked ? "nav-menu acitve" : "nav-menu"}>
                         {MenuItems.map((item, index) => {
                             return (
                                 <li key={index}>
-                                    <a className={item.cName} href={item.url}>{item.title}</a>
+                                    <Link className={item.cName} to={item.url}>{item.title}</Link>
                                 </li>
                             )
                         })}
