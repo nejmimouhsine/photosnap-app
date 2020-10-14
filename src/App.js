@@ -9,10 +9,12 @@ import {
 } from 'react-router-dom';
 
 import Homepage from './components/Pages/homepage/Homepage.component';
-import Stories from './components/Pages/Stories.component';
-import Features from './components/Pages/Features.component';
-import Pricing from './components/Pages/Pricing.component';
+import Stories from './components/Pages/Stories/Stories.component';
+import Features from './components/Pages/Features/Features.component';
+import Pricing from './components/Pages/Pricing/Pricing.component';
+
 import Navbar from './components/Navbar/Navbar.component';
+import Footer from './components/Footer/Footer.component';
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
         <Route path="/features" component={Features} />
         <Route path="/pricing" component={Pricing} />
       </Switch>
+      <Footer />
     </Router>
   );
 }

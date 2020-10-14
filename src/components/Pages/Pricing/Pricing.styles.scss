@@ -1,0 +1,121 @@
+.pricing {
+    &__image {
+        background: url('../../../assets/pricing/desktop/hero.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__cards {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px;
+    }
+
+    &__switch {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0 50px;
+    }
+
+    &__month {
+        font-size: 18px;
+        font-weight: 700;
+        margin-right: 40px;
+        color: #000;
+        opacity: 0.5;
+        transition: opacity .5s;
+        
+        &.active {
+            opacity: 1;
+        }
+    }
+
+    &__toggle {
+        background: #DFDFDF;
+        width: 70px;
+        height: 35px;
+        border-radius: 50px;
+        position: relative;
+        cursor: pointer;
+        transition: all .3s ease;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+
+        &.active {
+            background: #000;
+        }
+    }
+
+    &__notch {
+        position: absolute;
+        top: 3px;
+        left: 2px;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: #000;
+        transition: transform .3s ease-in-out;
+
+        &.active {
+            background: #fff;
+            transform: translateX(36px);
+        }
+    }
+
+    &__year {
+        font-size: 18px;
+        font-weight: 700;
+        margin-left: 40px;
+        color: #000;
+        opacity: 0.5;
+        transition: opacity .5s;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+
+    &__plans {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    &__compare {
+        margin-top: 100px;
+        text-align: center;
+        text-transform: uppercase;
+        
+        & > h1 {
+            font-size: 40px;
+            font-weight: 600;
+            letter-spacing: 3px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .pricing {
+        &__cards {
+            height: auto;
+        }
+
+        &__plans {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-bottom: 0px;
+        }
+
+        &__switch {
+            margin: 50px 0;
+        }
+    }
+}

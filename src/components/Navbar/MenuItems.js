@@ -15,3 +15,26 @@ export const MenuItems = [
         cName: "nav-links"
     }
 ];
+
+export const MenuItemsFooter = [
+    {
+        title: "Home",
+        url: "/",
+        cName: "footer__link"
+    },
+    {
+        title: "stories",
+        url: "/stories",
+        cName: "footer__link"
+    },
+    {
+        title: "features",
+        url: "/features",
+        cName: "footer__link"
+    },
+    {
+        title: "pricing",
+        url: "/pricing",
+        cName: "footer__link"
+    }
+];

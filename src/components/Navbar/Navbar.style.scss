@@ -1,17 +1,23 @@
-$color-primary: #000;
-$color-secondary: #B3B3B3;
-
 .header {
     padding: 15px 75px;
 
+    @media only screen and (max-width: 800px) {
+        padding: 15px;
+    }
+
     .Navbar-icon {
         display: none;
+
+        @media only screen and (max-width: 700px) {
+            display: block;
+        }
     }
 
     .NavbarItems {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
 
         .Navbar-logo {
             cursor: pointer;
@@ -24,20 +30,64 @@ $color-secondary: #B3B3B3;
 
         li:not(:last-child) {
             margin-right: 40px;
+            
+            @media only screen and (max-width: 700px) {
+                margin-right: 0;
+            }
         }
+
 
         .nav-links {
             text-decoration: none;
             text-transform: uppercase;
             font-size: 10px;
             letter-spacing: 2px;
-            color: $color-primary;
+            color: #000;
             font-weight: 700;
             transition: all .5s;
 
             &:hover {
-                color: $color-secondary;
+                color: #B3B3B3;
+                text-decoration: underline;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 300px;
+        top: 36px;
+        left: -100%;
+        position: absolute;
+        opacity: 1;
+        transition: all .5s ease;
+    }
+
+    .nav-menu.active {
+        background: #fff;
+        left: -15px;
+        opacity: 1;
+        transition: all .5s ease;
+        z-index: 100;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .Navbar-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 1.8rem;
+        cursor: pointer;
     }
 }

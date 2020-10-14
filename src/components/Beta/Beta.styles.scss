@@ -1,0 +1,68 @@
+.beta {
+    font-family: 'DM Sans', sans-serif;
+    height: 32vh;
+    background: url('../../assets/shared/desktop/bg-beta.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    padding: 0 80px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 5px;
+        background: rgb(254,196,147);
+        background: linear-gradient(0deg, rgba(254,196,147,1) 0%, rgba(187,114,154,1) 50%, rgba(90,119,255,1) 100%);
+    }
+
+    &__content {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & > h1 {
+            line-height: 1.4;
+            max-width: 420px;
+            font-size: 40px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .beta {
+        padding: 30px;
+
+        &::before {
+            left: 5%;
+            width: 20%;
+            height: 5px;
+            background: linear-gradient(90deg, rgba(254,196,147,1) 0%, rgba(187,114,154,1) 50%, rgba(90,119,255,1) 100%);
+        }
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .beta {
+        height: 25vh;
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            & > h1 {
+                font-size: 25px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}

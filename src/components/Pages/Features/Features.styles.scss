@@ -1,0 +1,52 @@
+.features {
+    height: 50vh;
+    position: relative;
+
+    &__content {
+        padding: 20px 50px;
+
+        &::before {
+            content: '';
+            height: 30%;
+            top: 50%;
+            transform: translateY(-65%);
+
+            @media only screen and (max-width: 1100px) {
+                transform: translateY(0);
+                top: 0;
+                height: 7px;
+            }
+        }
+
+    }
+
+    &__title {
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__para {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    &__image {
+        height: 100%;
+        width: 100%;
+        background: url('../../../assets/features/desktop/hero.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__feature {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 100px 0;
+    }
+
+    &__item {
+        margin: 40px 20px;
+    }
+}

@@ -19,7 +19,7 @@ class Navbar extends Component {
 
     render() {
         return (
-            <header className="header">
+            <header className={this.state.clicked ? "header active" : "header"}>
                 <div className="Navbar-icon" onClick={this.handleClick}>
                     <img src={this.state.clicked ? Close : Menu} alt="Photosnap Menu" />
                 </div>
@@ -28,7 +28,7 @@ class Navbar extends Component {
                     <Link className="Navbar-logo" to="/">
                         <img src={Logo} alt="Photosnap" />
                     </Link>
-                    <ul className={this.state.clicked ? "nav-menu acitve" : "nav-menu"}>
+                    <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
                         {MenuItems.map((item, index) => {
                             return (
                                 <li key={index}>
@@ -37,7 +37,7 @@ class Navbar extends Component {
                             )
                         })}
                     </ul>
-                    <Button className="cta-btn" type="submit">get an invite</Button>
+                    <Button className={this.state.clicked ? "cta-btn active" : "cta-btn"} type="submit">get an invite</Button>
                 </nav>
             </header>
         )
