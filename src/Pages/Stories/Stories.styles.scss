@@ -1,5 +1,5 @@
 .stories {
-    height: 55vh;
+    height: 800px;
     color: #fff;
     position: relative;
     font-family: 'DM Sans', sans-serif;
@@ -9,7 +9,7 @@
         width: 100%;
         z-index: -1;
         background: #000;
-        background-image: url("../../../assets/stories/desktop/moon-of-appalacia.jpg");
+        background-image: url("../../assets/stories/desktop/moon-of-appalacia.jpg");
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -94,7 +94,7 @@
         flex-direction: column;
 
         &__background {
-            background-image: url('../../../assets/stories/mobile/moon-of-appalacia.jpg');
+            background-image: url('../../assets/stories/mobile/moon-of-appalacia.jpg');
             height: 50%;
         }
 

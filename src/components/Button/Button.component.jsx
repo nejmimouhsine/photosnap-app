@@ -1,15 +1,16 @@
-import React from 'react';
-import './Button.style.scss';
+import React from "react";
+import "./Button.style.scss";
 
-const Button = ({
-    children,
-    type,
-    onClick,
-    className,
-}) => {
-    return (
-        <button className={className} onClick={onClick} type={type}>{children}</button>
-    )
-}
+const Button = (props) => {
+	return (
+		<button
+			className={props.className}
+			onClick={props.onClick}
+			type={props.type}
+		>
+			{props.children}
+		</button>
+	);
+};
 
 export default Button;
